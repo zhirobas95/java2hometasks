@@ -21,10 +21,10 @@ public class Animal implements Participant {
 
     public void run(int distance){
         if(distance <= maxRunDist){
-            System.out.println(type + " " + name + " Успешно справился с кроссом");
+            System.out.println(type + " " + name + " успешно справился с кроссом.");
 
         }else {
-            System.out.println(type + " " + name + " Не справилось");
+            System.out.println(type + " " + name + " не добежал.");
             onDistance = false;
         }
 
@@ -32,10 +32,10 @@ public class Animal implements Participant {
 
     public void jump(int distance){
         if(distance <= maxJumpDist){
-            System.out.println(type + " " + name + " Успешно справился с кроссом");
+            System.out.println(type + " " + name + " успешно перепрыгнул.");
 
         }else {
-            System.out.println(type + " " + name + " Не справилось");
+            System.out.println(type + " " + name + " не допрыгнул.");
             onDistance = false;
         }
 
@@ -49,10 +49,10 @@ public class Animal implements Participant {
 
 
         if(distance <= maxSwimDist){
-            System.out.println(type + " " + name + " Успешно справился с кроссом");
+            System.out.println(type + " " + name + " успешно проплыл");
 
         }else {
-            System.out.println(type + " " + name + " Не справилось");
+            System.out.println(type + " " + name + " не доплыл.");
             onDistance = false;
         }
 
@@ -65,7 +65,7 @@ public class Animal implements Participant {
 
     @Override
     public void info() {
-        System.out.println(type+ " " + name + " " + onDistance);
+        System.out.println(type+ " " + name);
     }
 
 }
