@@ -18,10 +18,10 @@ public class Human implements Participant{
 
     public void run(int distance){
         if(distance <= maxRunDit){
-            System.out.println(name + " Успешно справился с кроссом");
+            System.out.println(name + " успешно справился с кроссом.");
 
         }else {
-            System.out.println(name + " Не справилось");
+            System.out.println(name + " не добежал.");
             active = false;
         }
 
@@ -29,20 +29,20 @@ public class Human implements Participant{
 
     public void jump(int distance){
         if(distance <= maxJumpDist){
-            System.out.println(name + " Успешно справился с кроссом");
+            System.out.println(name + " успешно перепрыгнул.");
 
         }else {
-            System.out.println(name + " Не справилось");
+            System.out.println(name + " не допрыгнул.");
             active = false;
         }
 
     }
     public void swim(int distance){
         if(distance <= maxJumpDist){
-            System.out.println(name + " Успешно справился с кроссом");
+            System.out.println(name + " успешно проплыл");
 
         }else {
-            System.out.println(name + " Не справилось");
+            System.out.println(name + " не доплыл");
             active = false;
         }
 
@@ -55,7 +55,7 @@ public class Human implements Participant{
 
     @Override
     public void info() {
-        System.out.println(name + " " + active);
+        System.out.println(name);
     }
 
 }
